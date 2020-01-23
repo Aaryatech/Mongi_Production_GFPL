@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_album_cake_order"
+            android:title="Album cake order" />
+        <item
+            android:id="@+id/nav_special_cake_order"
+            android:title="Special cake order" />
+        <item
+            android:id="@+id/nav_regular_cake_as_special_order"
+            android:title="Regular cake as special order" />
+        <item
+            android:id="@+id/nav_sp_checking"
+            android:title="Dispatch checking" />
+
+        <item
+            android:id="@+id/nav_regular_cake_as_sp_checking"
+            android:title="Regular cake as SP checking"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_stock_transfer"
+            android:title="Stock transfer" />
+
+        <item
+            android:id="@+id/nav_report"
+            android:title="Report" />
+
+        <item
+            android:id="@+id/nav_user"
+            android:title="User" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

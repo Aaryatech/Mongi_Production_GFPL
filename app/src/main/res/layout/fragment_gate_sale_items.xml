@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.GateSaleItemsFragment">
+
+    <LinearLayout
+        android:id="@+id/llBottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
+
+            <LinearLayout
+                android:id="@+id/llEmpProducts_Cakes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|bottom|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProduct_CakeIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:fontFamily="@font/awesome"
+                    android:gravity="center"
+                    android:text="&#xf1fd;"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvProduct_Cake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="Cakes &amp; Pastries" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEmpProducts_Savouries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|bottom|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProduct_SavouriesIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/awesome"
+                    android:gravity="center"
+                    android:text="&#xf200;"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvProduct_Savouries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="Savouries" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEmpProducts_PackProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|bottom|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProduct_PackItemIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/awesome"
+                    android:gravity="center"
+                    android:text="&#xf06b;"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvProduct_PackItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="Pack Products" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEmpProducts_TradingMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|bottom|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProduct_TradingMatIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/awesome"
+                    android:gravity="center"
+                    android:text="&#xf290;"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvProduct_TradingMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sofiapro_light"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text="Trading Materials" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/llBottomButton"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/edProduct_Search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/ic_search"
+            android:fontFamily="@font/sofiapro_light"
+            android:hint="Search"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <GridView
+            android:id="@+id/gvProducts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:horizontalSpacing="7dp"
+            android:numColumns="2"
+            android:verticalSpacing="7dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
